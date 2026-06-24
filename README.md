@@ -29,3 +29,4 @@ Foodie is a fully responsive food ordering website built using HTML, CSS, and Ja
 
 ## Author
 Prashant Kumar
+🚀 CSE Student | Web Developer | DSA Enthusiast
