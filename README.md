@@ -9,7 +9,7 @@ The website provides a smooth shopping experience with product cards, a dynamic 
 
 ## 💼 LinkedIn
 
-🔗 **LinkedIn:** YOUR_LINKEDIN_PROFILE_LINK_HERE
+🔗 **LinkedIn:** https://www.linkedin.com/in/%20prashant-kumar-4a9bb7352%20Vanity%20URL%20name
 
 ## 📌 Features
 
