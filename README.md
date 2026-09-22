@@ -2,7 +2,9 @@
 
 A modern and responsive shopping website built using **HTML, CSS, and JavaScript**.
 This project includes a dynamic product section, responsive navigation, Swiper slider, and a fully functional shopping cart.
+
 LIVE DEMO : https://prashantbuildsdev-dev.github.io/Foodie-Website/
+
 ## 🚀 Features
 
 * 📱 Fully Responsive Design
