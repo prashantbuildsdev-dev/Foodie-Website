@@ -1,39 +1,46 @@
-# 🛒 Responsive Shopping Cart Website
+# 🛒 Food Cart Website
 
-A modern and responsive shopping website built using **HTML, CSS, and JavaScript**.
-This project includes a dynamic product section, responsive navigation, Swiper slider, and a fully functional shopping cart.
+A responsive and interactive **Food Cart Website** built using **HTML, CSS, and JavaScript**.
+The website provides a smooth shopping experience with product cards, a dynamic shopping cart, quantity management, image slider, and responsive mobile navigation.
 
-LIVE DEMO : https://prashantbuildsdev-dev.github.io/Foodie-Website/
+## 🚀 Live Demo
 
-## 🚀 Features
+🔗 **Live Demo:** https://prashantbuildsdev-dev.github.io/Foodie-Website/
 
-* 📱 Fully Responsive Design
-* 🛍️ Dynamic Product Cards
-* 🛒 Add to Cart Functionality
-* ➕ Increase Product Quantity
-* ➖ Decrease Product Quantity
-* 💰 Automatic Cart Total Calculation
-* 🔢 Automatic Cart Item Count
-* ❌ Remove Product from Cart
-* 📊 Dynamic Product Data using `products.json`
-* 🍔 Responsive Hamburger Menu
-* 🔄 Swiper.js Image/Product Slider
-* ✨ Smooth Cart Item Removal Animation
-* 🚫 Prevents Duplicate Products in Cart
+## 💼 LinkedIn
+
+🔗 **LinkedIn:** YOUR_LINKEDIN_PROFILE_LINK_HERE
+
+## 📌 Features
+
+* 🛍️ Product listing with dynamic product cards
+* ➕ Add products to cart
+* 🚫 Prevents duplicate products from being added
+* ➕ Increase product quantity
+* ➖ Decrease product quantity
+* 🗑️ Remove product from cart
+* 💰 Automatically calculates cart total
+* 🔢 Displays total number of items in cart
+* 🖼️ Swiper image/product slider
+* 📱 Responsive mobile navigation menu
+* 🍔 Hamburger menu for mobile devices
+* ✨ Interactive cart sidebar
+* 📦 Products loaded dynamically from `products.json`
+* 📱 Responsive design for different screen sizes
 
 ## 🛠️ Technologies Used
 
-* **HTML5**
-* **CSS3**
-* **JavaScript**
-* **Swiper.js**
-* **Font Awesome**
-* **JSON**
+* HTML5
+* CSS3
+* JavaScript
+* Swiper.js
+* Font Awesome
+* JSON
 
 ## 📂 Project Structure
 
 ```text
-responsive-shopping-cart/
+Food-Cart/
 │
 ├── index.html
 ├── style.css
@@ -50,104 +57,110 @@ responsive-shopping-cart/
 
 ### 1. Product Loading
 
-Products are stored in a `products.json` file and loaded dynamically using JavaScript:
+Products are stored inside `products.json` and loaded dynamically using JavaScript's `fetch()` method.
 
 ```javascript
 fetch('products.json')
+  .then(response => response.json())
+  .then(data => {
+      productList = data;
+      showCards();
+  });
 ```
-
-The product information is then displayed as product cards on the webpage.
 
 ### 2. Add to Cart
 
 When the user clicks **Add to Cart**, the selected product is added to the cart.
 
-The project also checks whether the product is already in the cart to prevent duplicate items.
+The application also checks whether the product is already present in the cart to prevent duplicate entries.
 
 ### 3. Quantity Management
 
-Users can increase or decrease the quantity of a product using the **+** and **−** buttons.
+Users can increase or decrease the quantity of products using the **+** and **−** buttons.
 
-The product price is automatically updated according to the selected quantity.
+The item price is automatically updated according to the selected quantity.
 
 ### 4. Cart Total
 
 The website automatically calculates:
 
 * Total quantity of products
-* Total price of products
+* Total cart price
 
 ```javascript
-updateTotals();
+cartTotal.textContent = `$${totalPrice.toFixed(2)}`;
+cartValue.textContent = totalQuantity;
 ```
 
 ### 5. Responsive Navigation
 
-A hamburger menu is included for smaller screens, making the website easier to use on mobile devices.
+A hamburger menu is provided for mobile devices.
+Clicking the hamburger icon opens and closes the mobile navigation menu.
 
-## 📸 Project Preview
+### 6. Swiper Slider
 
-Add your project screenshots here:
+The website uses **Swiper.js** to create a smooth and interactive product/image slider.
 
-```markdown
-![Project Screenshot](images/screenshot.png)
+```javascript
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+        nextEl: "#next",
+        prevEl: "#prev",
+    },
+});
 ```
 
-## ▶️ How to Run
+## 🎯 Main JavaScript Functionality
 
-1. Clone this repository:
+The project uses JavaScript to handle:
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
+* Product rendering
+* Shopping cart functionality
+* Quantity updates
+* Price calculation
+* Product removal
+* Mobile menu
+* Cart sidebar
+* Swiper navigation
+* Dynamic JSON data
 
-2. Open the project folder.
-
-3. Run the project using **VS Code Live Server** or another local server.
-
-4. Open the website in your browser.
-
-> **Note:** Since the project loads `products.json` using `fetch()`, running it through a local server such as Live Server is recommended instead of directly opening `index.html`.
-
-## 🎯 What I Learned
+## 💡 What I Learned
 
 While building this project, I practiced:
 
-* DOM Manipulation
-* JavaScript Events
-* Arrays and Objects
-* `find()` and `filter()` methods
-* Fetch API
-* JSON Data Handling
-* Dynamic HTML Creation
-* Event Listeners
-* Responsive Navigation
-* Shopping Cart Logic
-* Price and Quantity Calculations
-* Swiper.js Integration
+* DOM manipulation
+* JavaScript event listeners
+* Arrays and objects
+* `fetch()` API
+* JSON data handling
+* Dynamic HTML creation
+* Cart management logic
+* Responsive navigation
+* Working with third-party JavaScript libraries
+* Basic frontend project structure
 
 ## 🔮 Future Improvements
 
-* User Login & Registration
-* Product Search
-* Category Filtering
-* Product Details Page
-* Wishlist Functionality
-* LocalStorage Cart
-* Checkout Page
-* Backend Integration
-* Database Integration
-* Online Payment Integration
+Some features that can be added in the future:
+
+* 🔐 User authentication
+* 💳 Online payment integration
+* ❤️ Wishlist functionality
+* 🔎 Product search
+* 🏷️ Product categories and filters
+* 💾 LocalStorage cart persistence
+* 📦 Order tracking
+* 🌐 Backend integration
 
 ## 👨‍💻 Author
 
-**Prashant Kumar**
+**Prashant Singh**
 
-B.Tech CSE Student | Frontend Developer | Learning DSA & MERN Stack Development | Backend Development
-
----
-
-LinkedIn: https://www.linkedin.com/in/%20prashant-kumar-4a9bb7352%20Vanity%20URL%20name
+B.Tech CSE Student | C++ & DSA | HTML | CSS | JavaScript | MERN Stack Developer
 
 
-⭐ If you like this project, consider giving it a **star** on GitHub!
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
