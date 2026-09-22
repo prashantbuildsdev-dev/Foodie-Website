@@ -145,4 +145,7 @@ B.Tech CSE Student | Frontend Developer | Learning DSA & MERN Stack Development 
 
 ---
 
+LinkedIn: https://www.linkedin.com/in/%20prashant-kumar-4a9bb7352%20Vanity%20URL%20name
+
+
 ⭐ If you like this project, consider giving it a **star** on GitHub!
